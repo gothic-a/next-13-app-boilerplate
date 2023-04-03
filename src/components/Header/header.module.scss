@@ -1,0 +1,40 @@
+@import '@/styles/variables.scss';
+
+.header {
+    height: 80px;
+    background-color: rgba(#000, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 64px;
+    font-family: var(--font-mono);
+    letter-spacing: 1px;
+}
+
+.navigation {
+    display: flex;
+
+    & > * {
+        padding: 16px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        transition: color .05s ease-in-out;
+
+        &:hover {
+            color: $darkBlue
+        }
+    }
+}
+
+.login {
+    text-transform: uppercase;
+    background-color: $blue;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .1s ease-in-out;
+
+    &:hover {
+        background-color: $darkBlue;
+    }
+}

@@ -1,0 +1,14 @@
+.counter {
+    display: flex;
+    margin: 0;
+    padding: 8px;
+    background-color: rgba(var(--callout-rgb), 0.5);
+    border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+    border-radius: var(--border-radius);
+
+    & > * {
+        padding: 0 16px;
+        cursor: pointer;
+        user-select: none;
+    }
+}
